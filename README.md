@@ -28,7 +28,7 @@ This is a simple web app built with **Streamlit** that takes a YouTube video URL
 - `youtube-transcript-api` – to fetch video transcripts  
 - `Google Generative AI SDK (Gemini Pro)` – for summarization  
 - `gTTS` – text-to-speech audio generation  
-- `dotenv` – to manage API keys securely  
+- `dotenv` – to load API keys securely  
 <br><br>
 
 ---
@@ -38,22 +38,13 @@ This is a simple web app built with **Streamlit** that takes a YouTube video URL
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/youtube-summarizer.git
-cd youtube-summarizer
+git clone https://github.com/S-Nainika/vidbrief.git
+cd vidbrief
 ```
 
-<br>
+<br>                                                                                                                                                            
 
-2. **Create a virtual environment (optional but recommended):**
-
-```bash
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-```
-
-<br>
-
-3. **Install dependencies:**
+2. **Install dependencies:**
 
 ```bash
 pip install -r requirements.txt
@@ -61,13 +52,14 @@ pip install -r requirements.txt
 
 <br>
 
-4. **Add your Gemini API key:**
+3. **Add your Gemini API key:**
 
 Create a `.env` file in the root directory and add:
 
 ```
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
+Get free gemini key from google
 
 <br><br>
 
@@ -86,14 +78,15 @@ Replace `app.py` with the filename you saved the code as.
 
 ## 📸 Screenshot
 
-> _Add a screenshot of the app interface here if available._  
+<img width="914" height="676" alt="image" src="https://github.com/user-attachments/assets/ac90d0ee-0f75-42ce-8330-8608e08f781e" />
+
 <br><br>
 
 ---
 
 ## ❗ Notes
 
-- Works only for videos that have an auto-generated or uploaded transcript.  
+- only works for english subtitled vedios  
 - gTTS requires an internet connection to generate audio.  
 <br><br>
 
